@@ -36,7 +36,7 @@ The `PLAYER_SETTINGS` dictionary configures the settings for White and Black pla
 
 ### Stockfish Engine Path
 
-Ensure that the `STOCKFISH_PATH` variable in line 23 points to the correct path of the Stockfish executable on your system.
+Ensure that the `STOCKFISH_PATH` variable in line 23 points to the correct path of the Stockfish executable on your system. If you don't use Stockfish for gameplay, you don't need to set a path. This program can currently only use Stockfish to get the best move for playing against humans or LLMs, and cannot use Stockfish for analysis.
 
 ### GUI Settings
 
