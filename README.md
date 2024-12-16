@@ -1,6 +1,6 @@
-# ChessGPT
+# GPTChessmate
 
-ChessGPT is an open-source chess game implementation that supports human, AI (ChatGPT), and Stockfish players. The game can be played in a graphical user interface (GUI) using Pygame or in a command-line interface (CLI).
+GPTChessmate is an open-source chess game implementation that supports human, AI (ChatGPT), and Stockfish players. The game can be played in a graphical user interface (GUI) using Pygame or in a command-line interface (CLI).
 
 ## Table of Contents
 
@@ -16,7 +16,7 @@ ChessGPT is an open-source chess game implementation that supports human, AI (Ch
 
 ## Usage
 
-ChessGPT supports different player types for White and Black, including human players, ChatGPT, and Stockfish. The game can be played in a GUI or CLI mode, and the player types can be selected at the start of the game.
+GPTChessmate supports different player types for White and Black, including human players, ChatGPT, and Stockfish. The game can be played in a GUI or CLI mode, and the player types can be selected at the start of the game.
 
 ## Configuration
 
@@ -66,9 +66,9 @@ tabulate==0.9.0
 
 ## How to Use
 
-0. **Download ChessGPT**: Download the repository from GitHub:
+0. **Download GPTChessmate**: Download the repository from GitHub:
    ```bash
-   https://github.com/jimmyshjj/ChessGPT/archive/refs/heads/main.zip
+   https://github.com/jimmyshjj/GPTChessmate/archive/refs/heads/main.zip
    ```
 
 1. **Set Up Configurations**: 
