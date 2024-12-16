@@ -1,0 +1,6 @@
+chess
+pandas
+openai
+pygame
+stockfish
+tabulate

@@ -22,21 +22,21 @@ ChessGPT supports different player types for White and Black, including human pl
 
 ### OpenAI API Settings
 
-- **API Key**: Replace `'sk-'` in `openai.api_key` with your actual OpenAI API key.
-- **Base URL**: If you are using a different API base URL, set `base_url` and `openai.base_url` accordingly.
+- **API Key**: Replace `'sk-'` in `openai.api_key` with your actual OpenAI API key in line 15.
+- **Base URL**: If you are using a different API base URL, set `base_url` and `openai.base_url` accordingly in line 18.
 
 ### Player Settings
 
 The `PLAYER_SETTINGS` dictionary configures the settings for White and Black players. You can modify the model names, system prompts, and other parameters.
 
-- **Model**: Specify the AI model to use for each player.
-- **System Prompt**: Customize the prompt provided to the AI.
-- **Pre/Post Content**: Modify the content displayed before and after the prompt.
-- **Chain of Thought (COT)**: The COT prompt is currently not included in the system prompt. You can uncomment and modify it as needed. (After testing, COT cannot improve the accuracy of ChatGPT's chess game, but it can somewhat reduce illegal outputs.)
+- **Model**: Specify the AI model to use for each player in line 98.
+- **System Prompt**: Customize the prompt provided to the AI in line 99.
+- **Pre/Post Content**: Modify the content displayed before and after the prompt in line 103 and 107.
+- **Chain of Thought (COT)**: The COT prompt is currently not included in the system prompt. You can uncomment it in line 101 and modify it as needed in line 32. (After testing, COT cannot improve the accuracy of ChatGPT's chess game, but it can somewhat reduce illegal outputs.)
 
 ### Stockfish Engine Path
 
-Ensure that the `STOCKFISH_PATH` variable points to the correct path of the Stockfish executable on your system.
+Ensure that the `STOCKFISH_PATH` variable in line 23 points to the correct path of the Stockfish executable on your system.
 
 ### GUI Settings
 
@@ -46,6 +46,10 @@ Ensure that the `STOCKFISH_PATH` variable points to the correct path of the Stoc
 
 To run this project, you need to install the required Python packages. You can install them using:
 
+```bash
+pip install chess pandas openai pygame stockfish tabulate
+```
+or
 ```bash
 pip install -r requirements.txt
 ```
@@ -57,6 +61,7 @@ pandas==2.2.3
 openai==1.54.5
 pygame==2.6.1
 stockfish==3.28.0
+tabulate==0.9.0
 ```
 
 ## How to Use
@@ -79,10 +84,11 @@ stockfish==3.28.0
      ```bash
      python gpt_chess_gui.py
      ```
-     or, if you are using Python 3:
+     or, if your operating system need to specify to use Python 3:
      ```bash
      python3 gpt_chess_gui.py
      ```
+   - Choose whether to use GUI or not.
    - Follow the on-screen instructions to make moves and interact with the game.
 
 4. **LLM Output Handling**:
