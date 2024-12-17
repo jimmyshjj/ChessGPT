@@ -95,7 +95,7 @@ COT = (
 
 PLAYER_SETTINGS = {
     "white": {
-        "model": "deepseek-chat",
+        "model": "chatgpt-4o-latest",
         "system_prompt":  (
             "You are an experienced white chess player.\n"
             #f"{COT}"
@@ -109,7 +109,7 @@ PLAYER_SETTINGS = {
         ),
     },
     "black": {
-        "model": "deepseek-chat",
+        "model": "chatgpt-4o-latest",
         "system_prompt": (
             "You are an experienced black chess player.\n"
             #f"{COT}"
